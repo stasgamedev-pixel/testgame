@@ -2,8 +2,8 @@
  * Player Entity - Baxi Character
  */
 
-import CONSTANTS from './constants.js';
-import { checkCollision } from './utils.js';
+import CONSTANTS from '../core/constants.js';
+import { checkCollision } from '../core/utils.js';
 
 export class Player {
     constructor(canvasWidth, canvasHeight) {
