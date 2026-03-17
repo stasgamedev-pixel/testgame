@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Весёлый Бакси: Беги и Прыгай</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Yandex Games SDK -->
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <!-- UI Overlay -->
+        <div id="ui-layer">
+            <!-- Main Menu -->
+            <div id="menu-screen" class="screen active">
+                <h1 class="game-title">Весёлый Бакси</h1>
+                <p class="subtitle">Беги и Прыгай</p>
+                <button id="btn-play" class="btn btn-large">Играть</button>
+                <button id="btn-shop" class="btn">Магазин</button>
+                <button id="btn-settings" class="btn">Настройки</button>
+            </div>
+            
+            <!-- HUD (Heads Up Display) -->
+            <div id="hud-screen" class="screen">
+                <div id="hud-top">
+                    <div id="score-display">🏃 0м</div>
+                    <div id="coins-display">🪙 0</div>
+                    <div id="hearts-display">❤️❤️❤️</div>
+                    <button id="btn-pause" class="btn-icon">⏸️</button>
+                </div>
+            </div>
+            
+            <!-- Pause Screen -->
+            <div id="pause-screen" class="screen">
+                <h2>Пауза</h2>
+                <button id="btn-resume" class="btn btn-large">Продолжить</button>
+                <button id="btn-menu-from-pause" class="btn">В меню</button>
+            </div>
+            
+            <!-- Game Over Screen -->
+            <div id="gameover-screen" class="screen">
+                <h2>Ой! Бакси устал!</h2>
+                <div id="final-score">Счет: 0м</div>
+                <div id="final-coins">Монет: 0</div>
+                <div id="best-score">Рекорд: 0м</div>
+                <button id="btn-retry" class="btn btn-large">Повторить</button>
+                <button id="btn-continue-ad" class="btn btn-ad">Продолжить за рекламу</button>
+                <button id="btn-menu-from-gameover" class="btn">В меню</button>
+            </div>
+            
+            <!-- Shop Screen -->
+            <div id="shop-screen" class="screen">
+                <h2>Магазин</h2>
+                <div id="shop-coins">🪙 <span id="shop-coin-count">0</span></div>
+                <div id="skins-grid"></div>
+                <button id="btn-back-from-shop" class="btn">Назад</button>
+            </div>
+            
+            <!-- Settings Screen -->
+            <div id="settings-screen" class="screen">
+                <h2>Настройки</h2>
+                <div class="setting-row">
+                    <label>Музыка</label>
+                    <input type="range" id="music-volume" min="0" max="100" value="50">
+                </div>
+                <div class="setting-row">
+                    <label>Звуки</label>
+                    <input type="range" id="sfx-volume" min="0" max="100" value="70">
+                </div>
+                <button id="btn-back-from-settings" class="btn">Назад</button>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
