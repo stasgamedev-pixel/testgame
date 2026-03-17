@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Player Placeholder Sprite - Blue Baxi -->
+  <!-- 64x64 pixel blue square with simple face -->
+  
+  <!-- Main body -->
+  <rect x="0" y="0" width="64" height="64" fill="#4A9FFF" />
+  
+  <!-- Eyes -->
+  <rect x="15" y="20" width="8" height="8" fill="#FFFFFF" />
+  <rect x="41" y="20" width="8" height="8" fill="#FFFFFF" />
+  
+  <!-- Eye pupils -->
+  <rect x="17" y="22" width="4" height="4" fill="#000000" />
+  <rect x="43" y="22" width="4" height="4" fill="#000000" />
+  
+  <!-- Mouth -->
+  <rect x="22" y="35" width="20" height="4" fill="#FFFFFF" />
+  
+  <!-- Simple outline for better visibility -->
+  <rect x="0" y="0" width="64" height="64" fill="none" stroke="#2E7CD6" stroke-width="2" />
+</svg>
